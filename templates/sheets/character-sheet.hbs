@@ -1,0 +1,41 @@
+<form class="{{cssClass}}" autocomplete="off">
+    {{!-- Sheet Header --}}
+    <header class="sheet-header flexrow">
+        <img class="profile" src="{{ actor.img }}" title="{{ actor.name }}" data-edit="img"/>
+
+        <section class="header-details flexrow">
+            <h1 class="charname">
+                <input name="name" type="text" value="{{ actor.name }}"
+                       placeholder="{{ localize openlegend.core.name }}"/>
+            </h1>
+            <aside class="header-exp flowcol">
+                <div class="charlevel" title="charlevel title">
+                    <label>{{ localize "openlegend.core.level" }} {{ data.level }}</label>
+                </div>
+                {{#if (eq actor.type "character")}}
+                    <div class="experience flexrow">
+                        <input name="data.xp" type="text" value="{{ data.xp }}" placeholder="1" data-dtype="Number"/>
+                        <span class="sep">/</span>
+                        <span class="max">{{ data.xp.max }}</span>
+                    </div>
+                    <div class="xpbar">
+                        <span class="bar" style="width: {{ data.xp.pct }}%"></span>
+                    </div>
+                {{/if}}
+            </aside>
+        </section>
+        <div class="stats">
+            {{> "systems/openlegend/templates/partials/character-stat-block.hbs"}}
+        </div>
+    </header>
+
+    <div class="sheet-navigation tabs" data-group="primary">
+        <a class="item active" data-tab="attributes">{{ localize "openlegend.core.attributes" }}</a>
+    </div>
+    <section class="weapon-list">
+        {{#each weapons as |weapon id|}}
+            {{> "systems/openlegend/templates/partials/weapon-card.hbs" weapon}}
+        {{/each}}
+    </section>
+
+</form>

@@ -1,0 +1,11 @@
+{
+  "name": "openlegend",
+  "version": "1.0.0",
+  "dependencies": {
+    "handlebars-helpers": "^0.10.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-less": "^4.0.1"
+  }
+}

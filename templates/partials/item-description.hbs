@@ -1,0 +1,28 @@
+<div class="tab flexrow active" data-group="primary" data-tab="description">
+    <div class="item-properties">
+        <div class="form-group">
+            <label>{{localize "openlegend.core.wealthLevel"}}</label>
+            <input type="text" name="data.wealthLevel" value="{{data.wealthLevel}}" data-dtype="Number"/>
+        </div>
+        <label>{{localize "openlegend.core.categories"}}</label>
+        <ol class="categories-list">
+            {{#each itemCategories}}
+                <li>{{localize this}}</li>
+            {{/each}}
+        </ol>
+        <label>{{localize "openlegend.core.properties"}}</label>
+        <ol class="properties-list">
+            {{#each itemProperties}}
+                <li>{{localize this}}</li>
+            {{/each}}
+        </ol>
+        <label>{{localize "openlegend.core.banes"}}</label>
+        <ol class="banes-list">
+            {{#each itemBanes}}
+                <li>{{localize this}}</li>
+            {{/each}}
+        </ol>
+    </div>
+
+    {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+</div>

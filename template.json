@@ -1,0 +1,164 @@
+{
+  "Actor": {
+    "types": [
+      "boss",
+      "character",
+      "npc"
+    ],
+    "templates": {
+      "common": {
+        "size": "medium",
+        "level": 1,
+        "speed": {
+          "burrow": 0,
+          "climb": 0,
+          "fly": 0,
+          "swim": 0,
+          "walk": 30
+        },
+        "hp": {
+          "value": 10,
+          "max": 10
+        },
+        "abilities": {
+          "agility": 0,
+          "fortitude": 0,
+          "might": 0,
+          "learning": 0,
+          "logic": 0,
+          "perception": 0,
+          "will": 0,
+          "deception": 0,
+          "presence": 0,
+          "persuasion": 0,
+          "alteration": 0,
+          "creation": 0,
+          "energy": 0,
+          "entropy": 0,
+          "influence": 0,
+          "movement": 0,
+          "prescience": 0,
+          "protection": 0
+        },
+        "defenses": {
+          "toughness": {
+            "value": 10
+          },
+          "guard": {
+            "value": 10
+          },
+          "resolve": {
+            "value": 10
+          }
+        }
+      },
+      "enemy": {
+        "primaryAttr": [],
+        "secondaryAttr": []
+      }
+    },
+    "character": {
+      "templates": ["common"],
+      "points": {
+        "attr": {
+          "spent": 0,
+          "total": 40
+        },
+        "feat": {
+          "spent": 0,
+          "total": 6
+        }
+      },
+      "archetype": "",
+      "xp": 0,
+      "description": "",
+      "biography": ""
+    },
+    "npc": {
+      "templates": ["common","enemy"]
+    },
+    "boss": {
+      "templates": ["common", "enemy"],
+      "bossEdge": 1
+    }
+  },
+  "Item": {
+    "types": [
+      "action",
+      "armor",
+      "banes",
+      "boons",
+      "feats",
+      "flaws",
+      "perks",
+      "weapon"
+    ],
+    "templates": {
+      "itemDescription": {
+        "description": ""
+      },
+      "loot": {
+        "wealthLevel": 0
+      },
+      "effect": {
+        "duraction": "",
+        "plvl": 1,
+        "effect": ""
+      }
+    },
+    "action": {
+      "templates": ["itemDescription"],
+      "attribute": "",
+      "target": "",
+      "special": ""
+    },
+    "armor": {
+      "templates": ["itemDescription", "loot"],
+      "categories": "",
+      "requiredFortitude": 0,
+      "defenseBonus": 0,
+      "speedPenalty": 0
+    },
+    "bane": {
+      "templates": ["itemDescription", "effect"],
+      "atks": {
+        "attr": "",
+        "target": ""
+      }
+    },
+    "boon": {
+      "templates": ["itemDescription", "effect"],
+      "attr": [],
+      "invokeTime": ""
+    },
+    "feats": {
+      "templates": ["itemDescription"],
+      "modifier": {
+        "attr": "",
+        "adv": "",
+        "dis": ""
+      }
+    },
+    "weapon": {
+      "templates": ["itemDescription", "loot"],
+      "hands": {
+        "value": 0,
+        "min": 0,
+        "max": 3
+      },
+      "range": {
+        "value": 0,
+        "min": 0
+      },
+      "melee": true,
+      "properties": [],
+      "banes": []
+    },
+    "perks": {
+      "templates": ["itemDescription"]
+    },
+    "flaws": {
+      "templates": ["itemDescription"]
+    }
+  }
+}

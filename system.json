@@ -1,0 +1,27 @@
+{
+  "name": "openlegend",
+  "title": "Open Legend",
+  "description": "A system for Open Legend",
+  "author": "Juno",
+  "version": "0.0.69",
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.7.9",
+  "esmodules": [
+    "openlegend.js"
+  ],
+  "styles": [
+    "openlegend.css"
+  ],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "hp",
+  "initiative": "1d20 + @attributes.agility.dice"
+}

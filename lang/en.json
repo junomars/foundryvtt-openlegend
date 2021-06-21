@@ -1,0 +1,87 @@
+{
+  "actor": {
+
+  },
+  "item": {
+
+  },
+  "openlegend": {
+    "core": {
+      "archetype": "Archetype",
+      "attributes": "Attributes",
+      "banes": "Banes",
+      "boons": "Boons",
+      "categories": "Categories",
+      "description": "Description",
+      "details": "Details",
+      "itemWeaponDetails": "Weapon Details",
+      "level": "Level",
+      "name": "Name",
+      "properties": "Properties",
+      "wealthLevel": "Wealth Level"
+    },
+    "defenses": {
+      "toughness": "Toughness",
+      "guard": "Guard",
+      "resolve": "Resolve"
+    },
+    "weapon": {
+      "labels": {
+        "categories": "Categories",
+        "properties": "Properties"
+      },
+      "categories": {
+        "hand0": "Unarmed",
+        "hand1": "One-Handed Melee",
+        "hand2": "Two-Handed Melee",
+        "hand3": "Versatile Melee",
+        "rangeClose": "Close Ranged",
+        "rangeShort": "Short Ranged",
+        "rangeMedium": "Medium Ranged",
+        "rangeLong": "Long Ranged",
+        "rangeExtreme": "Extreme Ranged"
+      },
+      "properties": {
+        "area": "Area",
+        "exp": "Expendable",
+        "def": "Defensive",
+        "rdy": "Delayed Ready",
+        "force": "Forceful",
+        "heavy": "Heavy",
+        "precise": "Precise",
+        "slow": "Slow",
+        "stat": "Stationary",
+        "swift": "Swift"
+      }
+    },
+    "banes": {
+      "blind": "Blinded",
+      "charm": "Charmed",
+      "deaf": "Deafened",
+      "death": "Death",
+      "demor": "Demoralized",
+      "disar": "Disarmed",
+      "dom": "Dominated",
+      "fatig": "Fatigued",
+      "fear": "Fear",
+      "force": "Forced Move",
+      "immob": "Immobile",
+      "incap": "Incapacitated",
+      "knock": "Knockdown",
+      "memAlt": "Memory Alteration",
+      "mindD": "Mind Dredge",
+      "null": "Nullify",
+      "persdmg": "Persistent Damage",
+      "phant": "Phantasm",
+      "poly": "Polymorph",
+      "prov": "Provoked",
+      "spy": "Spying",
+      "sick": "Sickened",
+      "silen": "Silenced",
+      "slow": "Slowed",
+      "stun": "Stunned",
+      "stup": "Stupefied",
+      "truth": "Truthfulness"
+    }
+  }
+}
